@@ -23,30 +23,6 @@ label.logo {
     font-weight: bold;
 }
 
-nav ul {
-    float: right;
-    margin-right: 20px;
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-
-nav ul li a {
-    color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
-
-a.active,
-a:hover {
-    background: #1b9bff;
-    transition: .5s;
-}
 
 .checkbtn {
     font-size: 22px;
@@ -166,7 +142,56 @@ section{
     margin-bottom: 2.3rem;
     margin-left: 10px;
 }
-
+#myInput {
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    margin-left: 100px;
+    width: 80%;
+    margin-left: 100px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    
+  }
+  
+  #myTable {
+    border-collapse: collapse;
+      margin: 150px 0;
+      width: 80%;
+      margin-left: 100px;
+      font-size: 0.9em;
+      font-family: sans-serif;
+      min-width: 400px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  #myTable thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+  }
+  #myTable th,
+  #myTable td {
+    padding: 12px 15px;
+  }
+  #myTable tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  #myTable tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  #myTable tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+  #myTable tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+  }
 .container {
     width: 100%;
     min-height: 100vh;

@@ -12,7 +12,6 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="about.html">Over mij</a></li>
                 <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
