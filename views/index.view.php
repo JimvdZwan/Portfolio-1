@@ -8,10 +8,12 @@
     <meta name="author"content="Jane Doe">
     <meta name="robots"content="index, follow">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title>Flexbox 0 — starting code</title>
+    <title>Portfolio Jim van der Zwan </title>
 </head>
 <body>
 <?php require 'nav.php';
@@ -20,89 +22,72 @@
 <!---home section--->
 <section class="home" id="home">
     <div class="home-text">
-        <h1>Portfolio J.D. van der Zwan <br><span class="input"></span></h1>
-        <a href="#about" class="btn">Meer info</a>
+        <h1>Portfolio J.D. van der Zwan</h1>
+        <a href="#about" class="btn btn-primary">Meer info</a>
     </div>
 
 </section>
-<section class="about" id="over ons">
-    <div class="about-img">
-        <img src="../img/cv_foto.jpeg">
-    </div>
 
-    <div class="about-text" id="about">
-        <h2>Jim  van der Zwan<br> AD Software Development Windesheim</h2>
-        <p>Familie Vermeulen maakt samen met een team van enthousiaste medewerkers Flevosap. Ze zijn bijna iedere dag te vinden in de boomgaarden rondom hun boerderij en bij collega-kwekers die ook hun bijdrage leveren aan Flevosap.<br>
-            <br> Het fruit, dat is hun passie. Ze zijn er met hart en ziel aan verknocht. Het maakt niet uit of je hen iets vraagt over appels, sinaasappels, aardbeien, citroenen, kersen, zwarte bessen, peren of cranberry’s: zij weten welk fruit in Flevosap mag, en welke niet. Bij de appels zijn bijvoorbeeld de Elstar, Goudrenet en Jonagold favoriet.</p>
-        <a href="../cv/CV%202024.pdf" class="btn">CV </a>
-    </div>
-</section>
-<div class="container">
-    <div class="box">
-        <div class="shadow"></div>
-        <div class="content">
-            <div class="percent" data-text="HTML" style="--num: 70">
-                <div class="dot"></div>
-                <svg>
-                    <circle cx="70" cy="70" r="70"></circle>
-                    <circle cx="70" cy="70" r="70"></circle>
-                </svg>
-            </div>
-            <div class="number">
-                <h2>70<span>%</span></h2>
+<div class="about-section" id="about">
+        <div class="inner-container">
+            <h1>Bio </h1>
+            <p class="text">
+                Aangenaam. Mijn naam is Jim van der Zwan. Ik ben 22 en kom uit Hoofddorp. Ik doe nu de AD Software Development in Almere.
+                Ik zit in mijn eerste jaar en dit is mijn eerste project. Het is een portfolio met wat informatie over mijzelf, een pagina waar 
+                je projecten kan aanmaken en een contactpagina. Hopelijk kunt u alles vinden. Zo niet mag u altijd contact met mij opnemen!
+                Nog een fijne dag!
+            </p>
+            <a href="../cv/CV%202024.pdf" class="btn btn-primary">Download CV </a>
+            <div class="skills">
+                <span>Web Design</span>
+                <span>Software ontwikkelaar</span>
+                <span>Coding</span>
             </div>
         </div>
     </div>
-
-    <div class="box">
-        <div class="shadow"></div>
-        <div class="content">
-            <div class="percent" data-text="CSS" style="--num: 50">
-                <div class="dot"></div>
-                <svg>
-                    <circle cx="70" cy="70" r="70"></circle>
-                    <circle cx="70" cy="70" r="70"></circle>
-                </svg>
-            </div>
-            <div class="number">
-                <h2>50<span>%</span></h2>
-            </div>
+<div class="wrapper">
+      <div class="card">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
         </div>
-    </div>
-
-    <div class="box">
-        <div class="shadow"></div>
-        <div class="content">
-            <div class="percent" data-text="JS" style="--num: 35">
-                <div class="dot"></div>
-                <svg>
-                    <circle cx="70" cy="70" r="70"></circle>
-                    <circle cx="70" cy="70" r="70"></circle>
-                </svg>
-            </div>
-            <div class="number">
-                <h2>35<span>%</span></h2>
-            </div>
+        <div class="title">HTML & CSS</div>
+      </div>
+      <div class="card js">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
         </div>
-    </div>
-    <div class="box">
-        <div class="shadow"></div>
-        <div class="content">
-            <div class="percent" data-text="PHP" style="--num: 70">
-                <div class="dot"></div>
-                <svg>
-                    <circle cx="70" cy="70" r="70"></circle>
-                    <circle cx="70" cy="70" r="70"></circle>
-                </svg>
-            </div>
-            <div class="number">
-                <h2>70<span>%</span></h2>
-            </div>
+        <div class="title">JavaScript</div>
+      </div>
+      <div class="card php">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
         </div>
+        <div class="title">PHP</div>
+      </div>
     </div>
-</div>
+    <script>
+      let options = {
+        startAngle: -1.55,
+        size: 150,
+        value: 0.85,
+        fill: {gradient: ['#00008B']}
+      }
+      $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+      function(event, progress, stepValue){
+        $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+      });
+      $(".js .bar").circleProgress({
+        value: 0.40
+      });
+      $(".php .bar").circleProgress({
+        value: 0.60
+      });
+    </script>
 <?php 
-require 'views/footer.php';
+require 'footer.php';
 ?>
 </body>
 </html>

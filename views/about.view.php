@@ -8,9 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/about.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -19,46 +16,23 @@
   <?php
   require 'nav.php';
   ?>
-    <section>
-            <div class = "image">
-                <!-- image here -->
-            </div>
-
-            <div class = "content">
+    <div class="about-section">
+    <div class = "content">
                 <h2>Over mij</h2>
                 <span><!-- line here --></span>
 
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis aspernatur voluptas inventore ab voluptates nostrum minus illo laborum harum laudantium earum ut, temporibus fugiat sequi explicabo facilis unde quos corporis!</p>
-
-                <ul class = "links">
-                    <li><a href = "/">Home</a></li>
-
-                    <div class = "vertical-line"></div>
-
-                    <li><a href = "project">Projecten</a></li>
-
-                    <div class = "vertical-line"></div>
-                    
-                    <li><a href = "contact">Contact</a></li>
-                </ul>
-
-                <ul class = "icons">
-                    <li>
-                        <i class = "fa fa-twitter"></i>
-                    </li>
-                    <li>
-                        <i class = "fa fa-facebook"></i>
-                    </li>
-                    <li>
-                        <i class = "fa fa-github"></i>
-                    </li>
-                    <li>
-                        <i class = "fa fa-pinterest"></i>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
+                <p>Rond juni 2017 heb ik mijn MAVO diploma gehaald. Dit is mij in 1 keer gelukt(dus in 4jaar). Daarna 
+                 moest ik op zoek naar welke richting ik toe zou gaan om te kunnen studeren. Ik heb veel open dagen bezocht tot ik 
+                 bij Nova College in Hoofddorp bij een kraampje van de afdeling ICT kwam. Er stonden 3 jongens en een docent die aan het 
+                 vertellen waren over hun opleiding MBO Applicatie en mediaontwikkelaar. Toen ik zag wat die studenten voor websites en 
+                 applicaties konden maken werd ik enthousiast. Wiskunde vond ik op de middelbare school al heel leuk en de docent zei dat Wiskunde
+                 in de ICT heel erg handig kan zijn. Ik schreef mij in en heb in 1 keer de opleiding gehaald. Daarna had ik de keus met een MBO Software 
+                 Applicatie(is in de tussentijd van naam veranderd) of ik opzoek naar werk ga of dat ik ga proberen door te studeren. Ik heb 
+                 een jaar HBO geprobeerd maar helaas lukte dat niet. Toen hoorde ik dat er ook AD(Assosiate Degree) opleidingen bestaan. Door de 
+                 goede begeleiding kwam ik op de website van Windesheim terecht en zo ben ik nu bezig om mij verder te ontwikkelen als Software Developer.
+                </p>
+</div>
+    </div>
 </body>
-<?php require 'footer.php'; ?>
+<?php require "footer.php";?>
 </html>

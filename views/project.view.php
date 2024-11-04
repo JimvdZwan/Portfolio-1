@@ -17,11 +17,9 @@
 <?php
 require 'views/nav.php';
 ?>
-<h1>Hello, Projects!</h1>
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+<h2>Zoek een gebruiker</h2>
+<input type="text" class="search"  id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
 <?php foreach($projects as $project): ?>
-  
-
 <table id="myTable">
   <thead>
   <tr class="header">
@@ -29,7 +27,6 @@ require 'views/nav.php';
             <th>Title</th>
             <th>Content</th>
             <th>Author</th>
-            <th>Aanmaken</th>
             <th>Wijzigen</th>
             <th>Verwijderen</th>
   </tr>
@@ -39,9 +36,6 @@ require 'views/nav.php';
             <td><?= $project->title ?></td>
             <td><?= $project->content ?></td>
             <td><?= $project->author ?></td>
-            <td><form action="add-project" method="post">
-                    <button type="submit" name="id" class="btn btn-outline-success" value="<?= $project->id; ?>">Aanmaken</button>
-                </form></td>
             <td><form action="upd-project" method="post">
                     <button type="submit" name="id" class="btn btn-outline-success" value="<?= $project->id; ?>">Updaten</button>
                 </form></td>
@@ -56,16 +50,16 @@ require 'views/nav.php';
 
 <?php endforeach; ?>
 <h2>Add project</h2>
-<form action="add-project" method="post">
-    <div class="mb-3">
+<form action="add-project" method="post" class="container">
+    <div class="project_data">
         <label for="projecttitle" class="form-label">Titel project</label>
-        <input type="text" class="form-control w-25" name="projecttitle" id="projecttitle"><br>
+        <input type="text" class="input" name="projecttitle" id="projecttitle"><br>
         <label for="projectcontent" class="form-label">Content project</label>
-        <input type="text" class="form-control w-25" name="projectcontent" id="projectcontent">
+        <textarea name="projectcontent" id="projectcontent" cols="30" rows="05"></textarea>
         <label for="projectauthor" class="form-label">Author project</label>
-        <textarea name="projectauthor" id="projectauthor" cols="30" rows="05"></textarea>
+        <input type="text" class="input" name="projectauthor" id="projectauthor">
+        <button type="submit" class="btn btn-primary">Aanmaken</button>
     </div>
-    <button type="submit" class="btn btn-primary">Aanmaken</button>
 </form>
 </div>
 

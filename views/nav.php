@@ -1,7 +1,7 @@
 <style>
     .navbar{
     display: flex;
-}
+    }
 .navbar a{
     color: var(--text-color);
     font-weight: 600;
