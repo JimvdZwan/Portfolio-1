@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Thisis a sample webpage demonstratingthe useof meta tags in HTML5."></metaname>
     <meta name="keywords" content="HTML5, meta tags, web development">
-    <meta name="author"content="Jane Doe">
+    <meta name="author"content="Jim van der Zwan">
     <meta name="robots"content="index, follow">
     <link rel="stylesheet" href="../css/about.css">
     <link rel="stylesheet" href="../css/style.css">
